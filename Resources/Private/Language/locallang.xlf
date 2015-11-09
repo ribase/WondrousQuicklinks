@@ -9,10 +9,10 @@
             <trans-unit id="flux.standard.description">
                 <source>Quicklinks</source>
             </trans-unit>
-            <trans-unit id="flux.hubs">
+            <trans-unit id="flux.quicklinks">
                 <source>Quicklinks element</source>
             </trans-unit>
-            <trans-unit id="flux.hubs.description">
+            <trans-unit id="flux.quicklinks.description">
                 <source>Quicklinks element</source>
                 </trans-unit>
 		</body>
