@@ -1,0 +1,5 @@
+plugin.tx_Wondrous.Quicklinks.view {
+	templateRootPaths.default = EXT:Wondrous.Quicklinks/Resources/Private/Templates/
+	partialRootPaths.default = EXT:Wondrous.Quicklinks/Resources/Private/Partials/
+	layoutRootPaths.default = EXT:Wondrous.Quicklinks/Resources/Private/Layouts/
+}
