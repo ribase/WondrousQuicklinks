@@ -56,7 +56,7 @@
 						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" width="460c" height="auto" />
 					</f:for>
 					<div class="quicklink-linkcontent">
-						<f:if condition="{settings.link}">
+						<f:if condition="{settings.linkOne}">
 							<f:link.page pageUid="{settings.linkOne}" title="{settings.linkTextOne}" class="readmore">{settings.linkTextOne}</f:link.page>
 						</f:if>
 					</div>
@@ -67,7 +67,7 @@
 						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" width="460c" height="auto" />
 					</f:for>
 					<div class="quicklink-linkcontent">
-						<f:if condition="{settings.link}">
+						<f:if condition="{settings.linkTwo}">
 							<f:link.page pageUid="{settings.linkTwo}" title="{settings.linkTextTwo}" class="readmore">{settings.linkTextTwo}</f:link.page>
 						</f:if>
 					</div>
@@ -78,7 +78,7 @@
 						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" width="460c" height="auto" />
 					</f:for>
 					<div class="quicklink-linkcontent">
-						<f:if condition="{settings.link}">
+						<f:if condition="{settings.linkThree}">
 							<f:link.page pageUid="{settings.linkThree}" title="{settings.linkTextThree}" class="readmore">{settings.linkTextThree}</f:link.page>
 						</f:if>
 					</div>
