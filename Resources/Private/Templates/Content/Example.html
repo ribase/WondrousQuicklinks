@@ -51,7 +51,7 @@
 				</v:tag>
 			</h1>
 			<div class="quicklink-content">
-				<div class="quicklink-one">
+				<div class="quicklink-one quicklink-content">
 					<f:for each="{v:content.resources.fal(field: 'settings.imagesOne')}" as="image">
 						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" width="50c" height="auto" />
 					</f:for>
@@ -62,7 +62,7 @@
 					</div>
 
 				</div>
-				<div class="quicklink-two">
+				<div class="quicklink-two quicklink-content">
 					<f:for each="{v:content.resources.fal(field: 'settings.imagesTwo')}" as="image">
 						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" width="50c" height="auto" />
 					</f:for>
@@ -73,7 +73,7 @@
 					</div>
 
 				</div>
-				<div class="quicklink-three">
+				<div class="quicklink-three quicklink-content">
 					<f:for each="{v:content.resources.fal(field: 'settings.imagesThree')}" as="image">
 						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" width="50c" height="auto" />
 					</f:for>
