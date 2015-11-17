@@ -50,7 +50,7 @@
 					{record.header -> f:format.raw()}
 				</v:tag>
 			</h1>
-			<div class="quicklink-content">
+			<div class="quicklink-basement">
 				<div class="quicklink-one quicklink-content">
 					<f:for each="{v:content.resources.fal(field: 'settings.imagesOne')}" as="image">
 						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" width="50c" height="auto" />
