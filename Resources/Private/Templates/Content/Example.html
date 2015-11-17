@@ -51,32 +51,38 @@
 				</v:tag>
 			</h1>
 			<div class="quicklink-basement">
-				<div class="quicklink-one quicklink-content">
-					<f:image src="{settings.imagesOne}" height="50c" width="auto" />
-					<div class="quicklink-linkcontent">
-						<f:if condition="{settings.linkOne}">
-							<f:link.page pageUid="{settings.linkOne}" title="{settings.linkTextOne}" class="readmore">{settings.linkTextOne}</f:link.page>
-						</f:if>
-					</div>
-
-				</div>
-				<div class="quicklink-two quicklink-content">
-					<f:image src="{settings.imagesTwo}" height="50c" width="auto" />
-					<div class="quicklink-linkcontent">
-						<f:if condition="{settings.linkTwo}">
-							<f:link.page pageUid="{settings.linkTwo}" title="{settings.linkTextTwo}" class="readmore">{settings.linkTextTwo}</f:link.page>
-						</f:if>
-					</div>
-
-				</div>
-				<div class="quicklink-three quicklink-content">
-					<f:image src="{settings.imagesThree}" height="50c" width="auto" />
-					<div class="quicklink-linkcontent">
-						<f:if condition="{settings.linkThree}">
-							<f:link.page pageUid="{settings.linkThree}" title="{settings.linkTextThree}" class="readmore">{settings.linkTextThree}</f:link.page>
-						</f:if>
-					</div>
-				</div>
+				<f:if condition="{settings.linkOne}">
+					<f:link.page pageUid="{settings.linkOne}" title="{settings.linkTextOne}" class="readmore">
+						<div class="quicklink-one quicklink-content">
+							<f:image src="{settings.imagesOne}" height="50c" width="auto" />
+							<div class="quicklink-linkcontent">
+								{settings.linkTextOne}
+							</div>
+						</div>
+					</f:link.page>
+				</f:if>
+				<f:if condition="{settings.linkTwo}">
+					<f:link.page pageUid="{settings.linkTwo}" title="{settings.linkTextTwo}" class="readmore">
+						<div class="quicklink-two quicklink-content">
+							<f:image src="{settings.imagesTwo}" height="50c" width="auto" />
+							<div class="quicklink-linkcontent">
+								{settings.linkTextTwo}
+							</div>
+						</div>
+					</f:link.page>
+				</f:if>
+				<f:if condition="{settings.linkThree}">
+					<f:link.page pageUid="{settings.linkThree}" title="{settings.linkTextThree}" class="readmore">{settings.linkTextThree}
+						<div class="quicklink-three quicklink-content">
+							<f:image src="{settings.imagesThree}" height="50c" width="auto" />
+							<div class="quicklink-linkcontent">
+								<f:if condition="{settings.linkThree}">
+									{settings.linkTextThree}
+								</f:if>
+							</div>
+						</div>
+					</f:link.page>
+				</f:if>
 			</div>
 
 
