@@ -14,7 +14,7 @@
 				</flux:field.input>
 				<flux:field.input name="settings.linkTextOne" maxCharacters="32" label="Linktext"/>
 
-				<flux:field.inline.fal name="settings.imagesOne" multiple="FALSE" maxItems="1" label="Image"/>
+				<flux:field.file name="settings.imagesOne" multiple="FALSE" maxItems="1" label="Image"/>
 			</flux:form.sheet>
 
 			<flux:form.sheet name="linkTwo" label="Link 2">
@@ -23,7 +23,7 @@
 				</flux:field.input>
 				<flux:field.input name="settings.linkTextTwo" maxCharacters="32" label="Linktext"/>
 
-				<flux:field.inline.fal name="settings.imagesTwo" multiple="FALSE" maxItems="1" label="Image"/>
+				<flux:field.file name="settings.imagesTwo" multiple="FALSE" maxItems="1" label="Image"/>
 			</flux:form.sheet>
 
 			<flux:form.sheet name="linkThree" label="Link 3">
@@ -32,7 +32,7 @@
 				</flux:field.input>
 				<flux:field.input name="settings.linkTextThree" maxCharacters="32" label="Linktext"/>
 
-				<flux:field.inline.fal name="settings.imagesThree" multiple="FALSE" maxItems="1" label="Image"/>
+				<flux:field.file name="settings.imagesThree" multiple="FALSE" maxItems="1" label="Image"/>
 			</flux:form.sheet>
 
 		</flux:form>
@@ -52,9 +52,7 @@
 			</h1>
 			<div class="quicklink-basement">
 				<div class="quicklink-one quicklink-content">
-					<f:for each="{v:content.resources.fal(field: 'settings.imagesOne')}" as="image">
-						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" height="50c" width="auto" />
-					</f:for>
+					<f:image src="{settings.imagesOne}" height="50c" width="auto" />
 					<div class="quicklink-linkcontent">
 						<f:if condition="{settings.linkOne}">
 							<f:link.page pageUid="{settings.linkOne}" title="{settings.linkTextOne}" class="readmore">{settings.linkTextOne}</f:link.page>
@@ -63,9 +61,7 @@
 
 				</div>
 				<div class="quicklink-two quicklink-content">
-					<f:for each="{v:content.resources.fal(field: 'settings.imagesTwo')}" as="image">
-						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" height="50c" width="auto" />
-					</f:for>
+					<f:image src="{settings.imagesTwo}" height="50c" width="auto" />
 					<div class="quicklink-linkcontent">
 						<f:if condition="{settings.linkTwo}">
 							<f:link.page pageUid="{settings.linkTwo}" title="{settings.linkTextTwo}" class="readmore">{settings.linkTextTwo}</f:link.page>
@@ -74,9 +70,7 @@
 
 				</div>
 				<div class="quicklink-three quicklink-content">
-					<f:for each="{v:content.resources.fal(field: 'settings.imagesThree')}" as="image">
-						<f:image treatIdAsReference="TRUE" src="{image.id}" alt="{image.title}" title="{f:if(condition: image.description, then: '{image.title}: ', else: '{image.title}')}{image.description}" height="50c" width="auto" />
-					</f:for>
+					<f:image src="{settings.linkThree}" height="50c" width="auto" />
 					<div class="quicklink-linkcontent">
 						<f:if condition="{settings.linkThree}">
 							<f:link.page pageUid="{settings.linkThree}" title="{settings.linkTextThree}" class="readmore">{settings.linkTextThree}</f:link.page>
