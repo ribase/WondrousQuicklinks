@@ -1,0 +1,11 @@
+{
+    "name": "ribase/WondrousQuicklinks",
+    "type": "typo3-cms-extension",
+    "description": "todo",
+    "license": ["GPL-2.0+"],
+    "keywords": ["TYPO3 CMS", "WondrousQuicklinks"],
+    "support": {
+        "issues": "https://github.com/ribase/WondrousQuicklinks/"
+    },
+    "version": "0.0.1"
+}
