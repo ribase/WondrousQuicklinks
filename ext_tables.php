@@ -5,5 +5,5 @@ if (!defined('TYPO3_MODE')) {
 
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Quicklinks');
 
-\FluidTYPO3\Flux\Core::registerProviderExtensionKey('Wondrous.Quicklinks', 'Content');
+\FluidTYPO3\Flux\Core::registerProviderExtensionKey('wondrousquicklinks', 'Content');
 
