@@ -1,5 +1,5 @@
 plugin.tx_wondrousquicklinks.view {
-	templateRootPaths.default = EXT:wondrousquicklinkss/Resources/Private/Templates/
+	templateRootPaths.default = EXT:wondrousquicklinks/Resources/Private/Templates/
 	partialRootPaths.default = EXT:wondrousquicklinks/Resources/Private/Partials/
 	layoutRootPaths.default = EXT:wondrousquicklinks/Resources/Private/Layouts/
 }
