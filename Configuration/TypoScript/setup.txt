@@ -1,5 +1,5 @@
-plugin.tx_wondrousquicklinks.view {
-	templateRootPaths.0 = {$plugin.tx_wondrousquicklinks.view.templateRootPaths.default}
-	partialRootPaths.0 = {$plugin.tx_wondrousquicklinks.view.partialRootPaths.default}
-	layoutRootPaths.0 = {$plugin.tx_wondrousquicklinks.view.layoutRootPaths.default}
+plugin.tx_Wondrous.Quicklinks.view {
+	templateRootPaths.0 = {$plugin.tx_Wondrous.Quicklinks.view.templateRootPaths.default}
+	partialRootPaths.0 = {$plugin.tx_Wondrous.Quicklinks.view.partialRootPaths.default}
+	layoutRootPaths.0 = {$plugin.tx_Wondrous.Quicklinks.view.layoutRootPaths.default}
 }

@@ -7,5 +7,9 @@
     "support": {
         "issues": "https://github.com/ribase/WondrousQuicklinks/"
     },
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "replace": {
+        "Vendor.WondrousQuicklinks": "self.version",
+        "ribase/WondrousQuicklinks": "self.version"
+    }
 }
