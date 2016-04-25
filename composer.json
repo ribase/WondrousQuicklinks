@@ -9,7 +9,7 @@
     },
     "version": "0.0.1",
     "replace": {
-        "Vendor.WondrousQuicklinks": "self.version",
-        "ribase/WondrousQuicklinks": "self.version"
+        "quicklinks": "self.version",
+        "Wondrous.Quicklinks": "self.version"
     }
 }
