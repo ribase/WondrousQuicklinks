@@ -1,15 +1,19 @@
 {
-    "name": "ribase/WondrousQuicklinks",
+    "name": "ribase/wondrousquicklinks",
     "type": "typo3-cms-extension",
     "description": "todo",
     "license": ["GPL-2.0+"],
-    "keywords": ["TYPO3 CMS", "WondrousQuicklinks"],
+    "keywords": ["TYPO3 CMS", "wondrousquicklinks"],
     "support": {
         "issues": "https://github.com/ribase/WondrousQuicklinks/"
     },
-    "version": "0.0.1",
+    "require": {
+        "typo3-ter/fluidcontent" : "~4.4.1",
+        "typo3-ter/flux" : "~7.4.0",
+        "typo3-ter/vhs" : "~2.4.0"
+    },
+    "version": "1.0.0",
     "replace": {
-        "quicklinks": "self.version",
-        "Wondrous.Quicklinks": "self.version"
+        "quicklinks": "self.version"
     }
 }
